@@ -18,7 +18,9 @@
 </head>
 <body>
     <div id="app">
-        
+        <ul>
+            <li v-for="(item, index) in todoList" :key="index">{{item}}</li>
+        </ul>
 
     </div>
 
