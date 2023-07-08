@@ -14,13 +14,31 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- Axios -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+   <link rel="stylesheet" href="./css/style.css">
     <title>PHP ToDo List JSON</title>
 </head>
 <body>
     <div id="app">
-        <ul>
-            <li v-for="(item, index) in todoList" :key="index">{{item}}</li>
-        </ul>
+        <div class="wrapper">
+            <div class="p-4 bg-primary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="text-muted">Todo List</h1>
+                            <ul>
+                                <li v-for="(item, index) in todoList" :key="index">{{item.text}}</li>
+                            </ul>
+    
+                        </div>
+                    </div>
+    
+                </div>
+
+            </div>
+    
+        </div>
+
+        
 
     </div>
 
