@@ -13,12 +13,12 @@
     <!-- Vue -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- Axios -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
     <title>PHP ToDo List JSON</title>
 </head>
 <body>
     <div id="app">
-        {{prova}}
+        
 
     </div>
 
