@@ -7,10 +7,10 @@
   $array = json_decode($string,true);
 
   
-  if(isset($_POST['nuova_task'])){
+  if(isset($_POST['text'])){
 
     $task =[
-      'text' => $_POST['nuova_task'],
+      'text' => $_POST['text'],
       'done'=> true
     ];
 

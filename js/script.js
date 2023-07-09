@@ -5,7 +5,7 @@ createApp({
         return{
             todoList: null,
             apiUrl: 'server.php',
-            nuova_task: " ",
+            nuova_task:"",
         }
     },
     mounted(){
@@ -18,7 +18,7 @@ createApp({
     methods: {
         inviaLista(){
             //se l'utente inserisce una nuova task
-            if(this.nuova_task != " "){
+            if(this.nuova_task != ""){
                 //creo un nuovo oggetto 
                 const data = {
                     text: this.nuova_task,
@@ -29,7 +29,7 @@ createApp({
                     headers: {'Content-Type' : 'multipart/form-data'}
                 }).then ((response)=> {
                     this.todoList = response.data;
-                    this.todoList = '';
+                    this.nuova_task = '';
                 })
             }
 
