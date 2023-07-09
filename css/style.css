@@ -10,6 +10,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background-color: rgb(26, 24, 56);
+}
 
+li{
+    list-style-type: none;
 }

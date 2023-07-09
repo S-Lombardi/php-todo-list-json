@@ -18,28 +18,33 @@
     <title>PHP ToDo List JSON</title>
 </head>
 <body>
-    <div id="app">
-        <div class="wrapper">
-            <div class="p-4 bg-primary">
+    <div class="wrapper">
+        <div id="app">
+            <!-- LISTA -->
+            <div class="py-5">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <h1 class="text-muted">Todo List</h1>
-                            <ul>
-                                <li v-for="(item, index) in todoList" :key="index">{{item.text}}</li>
+                            <h1 class="text-muted display-1">Todo List</h1>
+                            <ul class="list-group list-group-flush border border-1 rounded">
+                                <li v-for="(item, index) in todoList" :key="index" class="list-group-item">{{item.text}}</li>
                             </ul>
-    
                         </div>
                     </div>
-    
                 </div>
 
             </div>
-    
+            <!-- CAMPO INPUT -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="input-group mb-3">
+                            <input type="text" @keyup.enter="inviaLista()" v-model="nuova_task" placeholder="Inserisci una nuova task" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        
-
     </div>
 
 
